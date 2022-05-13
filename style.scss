@@ -11,14 +11,13 @@ form {
         &:checked {
             ~ label.left-label::after{
                 z-index: 2;
-                width: 248px;
-                border-top-right-radius: 50px;
-                border-bottom-right-radius: 50px;
+                width: 250px;
+                border-radius: 50px;
                 background-color: #12CBC4;
             }
             ~ .circle {
                 left: 120.5px;
-                background-color: #1289A7;
+                background-color: #34495e;
             }
         }
     }
@@ -29,27 +28,24 @@ form {
             content: "";
             cursor: pointer;
             position: absolute;
-            width: 125px;
             height: 100px;
-            border: 2px solid #333;
-            background-color: #95a5a6;
+            background-color: #576574;
             transform: translate(-80px, -40px);
         }
     }
 
     label.left-label {
-        margin-right: 102.64px;
         &::after {
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
+            width: 0px;
             border-right: none;
         }
     }
 
     label.right-label {
         &::after {
-            border-top-right-radius: 50px;
-            border-bottom-right-radius: 50px;
+            width: 250px;
+            border-radius: 50px;
+            left: -4px;
             border-left: none;
         }
     }
@@ -61,9 +57,9 @@ form {
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        top: -38px;
-        left: -29px;
-        background-color: #34495e;
+        top: -40px;
+        left: -31px;
+        background-color: #12CBC4;
         transition: 0.4s;
     }
 }
