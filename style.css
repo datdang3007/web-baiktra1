@@ -9,6 +9,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 form {
@@ -19,12 +20,13 @@ form input.right-input:checked ~ label.left-label::after {
   z-index: 2;
   width: 250px;
   border-radius: 50px;
-  background-color: #12CBC4;
+  background-color: black;
+  border: 2px solid #b9b9b9;
 }
 
 form input.right-input:checked ~ .circle {
-  left: 120.5px;
-  background-color: #34495e;
+  left: 122.75px;
+  background-color: #feca57;
 }
 
 form label.left-label, form label.right-label {
@@ -36,7 +38,7 @@ form label.left-label::after, form label.right-label::after {
   cursor: pointer;
   position: absolute;
   height: 100px;
-  background-color: #576574;
+  background-color: #34495e;
   -webkit-transform: translate(-80px, -40px);
           transform: translate(-80px, -40px);
 }
@@ -51,6 +53,7 @@ form label.right-label::after {
   border-radius: 50px;
   left: -4px;
   border-left: none;
+  border: 2px solid gray;
 }
 
 form .circle {
@@ -60,9 +63,9 @@ form .circle {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  top: -40px;
-  left: -30px;
-  background-color: #12CBC4;
+  top: -38px;
+  left: -28.35px;
+  background-color: #00d2d3;
   -webkit-transition: left 0.4s;
   transition: left 0.4s;
 }
