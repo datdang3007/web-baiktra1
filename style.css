@@ -1,0 +1,76 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+form {
+  position: relative;
+}
+
+form input.right-input:checked ~ label.left-label::after {
+  z-index: 2;
+  width: 248px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #12CBC4;
+}
+
+form input.right-input:checked ~ .circle {
+  left: 120.5px;
+  background-color: #1289A7;
+}
+
+form label.left-label, form label.right-label {
+  position: relative;
+}
+
+form label.left-label::after, form label.right-label::after {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  border: 2px solid #333;
+  background-color: #95a5a6;
+  -webkit-transform: translate(-80px, -40px);
+          transform: translate(-80px, -40px);
+}
+
+form label.left-label {
+  margin-right: 102.64px;
+}
+
+form label.left-label::after {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-right: none;
+}
+
+form label.right-label::after {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-left: none;
+}
+
+form .circle {
+  z-index: 3;
+  cursor: pointer;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -38px;
+  left: -29px;
+  background-color: #34495e;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+/*# sourceMappingURL=style.css.map */
